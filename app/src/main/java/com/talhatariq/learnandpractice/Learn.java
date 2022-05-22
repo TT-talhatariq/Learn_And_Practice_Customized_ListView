@@ -95,11 +95,6 @@ public class Learn extends AppCompatActivity {
             "<h1 class=\"h1\">Loops in Java</h1>\n" +
             "<p>The Java <em>for loop</em> is used to iterate a part of the program several times. If the number of iteration is <strong>fixed</strong>, it is recommended to use for loop.</p>\n" +
             "<p>There are three types of for loops in Java.</p>\n" +
-            "<img src=\"https://static.javatpoint.com/images/java-loops.png\" alt=\"Loops in Java\" />\n" +
-            "<ul class=\"points\">\n" +
-            "<li>Simple for Loop</li>\n" +
-            "<li><a href=\"https://www.javatpoint.com/for-each-loop\">For-each</a> or Enhanced for Loop</li>\n" +
-            "<li>Labeled for Loop</li>\n" +
             "</ul>\n" +
             "<h2 class=\"h2\">Java Simple for Loop</h2>\n" +
             "<p>A simple for loop is the same as <a href=\"https://www.javatpoint.com/c-programming-language-tutorial\">C</a>/<a href=\"https://www.javatpoint.com/cpp-tutorial\">C++</a>. We can initialize the <a href=\"https://www.javatpoint.com/java-variables\">variable</a>, check condition and increment/decrement value. It consists of four parts:</p>\n" +
@@ -115,23 +110,14 @@ public class Learn extends AppCompatActivity {
             "//statement or code to be executed  \n" +
             "}  \n" +
             "</textarea></div>\n" +
-            "<p><strong>Flowchart:</strong></p>\n" +
-            "<img src=\"https://static.javatpoint.com/cpages/images/forloop.png\" alt=\"for loop in java flowchart\" />\n" +
-            "<p><strong>Example:</strong></p>\n" +
-            "<p><strong>ForExample.java</strong></p>\n" +
-            "<div class=\"codeblock\"><textarea name=\"code\" class=\"java\">\n" +
-            "//Java Program to demonstrate the example of for loop\n" +
-            "//which prints table of 1\n" +
-            "public class ForExample {\n" +
-            "public static void main(String[] args) {\n" +
-            "    //Code of Java for loop\n" +
-            "\tfor(int i=1;i<=10;i++){\n" +
-            "\t\tSystem.out.println(i);\n" +
-            "\t}\n" +
+            "<div class=\"codeblock\"><p>\n" +
+            "public static void main(String[] args) {<br>\n" +
+            "\tfor(int i=1;i<=10;i++){<br>\n" +
+            "\t\tSystem.out.println(i);<br>\n" +
+            "\t}<br>\n" +
+            "}<br>\n<" +
             "}\n" +
-            "}\n" +
-            "</textarea></div>\n" +
-            "<span class=\"testit\"><a href=\"https://compiler.javatpoint.com/opr/test.jsp?filename=ForExample\" target=\"_blank\">Test it Now</a></span>\n" +
+            "</p></div>\n" +
             "<p><strong>Output:</strong></p>\n" +
             "<div class=\"codeblock3\"><pre>1\n" +
             "2\n" +
@@ -143,79 +129,7 @@ public class Learn extends AppCompatActivity {
             "8\n" +
             "9\n" +
             "10\n" +
-            "</pre></div>\n" +
-            "<h2 class=\"h2\">Java Nested for Loop</h2>\n" +
-            "<p>If we have a for loop inside the another loop, it is known as nested for loop. The inner loop executes completely whenever outer loop executes.</p>\n" +
-            "<p><strong>Example:</strong></p>\n" +
-            "<p><strong>NestedForExample.java</strong></p>\n" +
-            "<div class=\"codeblock\"><textarea name=\"code\" class=\"java\">\n" +
-            "public class NestedForExample {\n" +
-            "public static void main(String[] args) {\n" +
-            "//loop of i\n" +
-            "for(int i=1;i<=3;i++){\n" +
-            "//loop of j\n" +
-            "for(int j=1;j<=3;j++){\n" +
-            "\t\tSystem.out.println(i+\" \"+j);\n" +
-            "}//end of i\n" +
-            "}//end of j\n" +
-            "}\n" +
-            "}\n" +
-            "</textarea></div>\n" +
-            "<p><strong>Output:</strong></p>\n" +
-            "<div class=\"codeblock3\"><pre>1 1\n" +
-            "1 2\n" +
-            "1 3\n" +
-            "2 1\n" +
-            "2 2\n" +
-            "2 3\n" +
-            "3 1\n" +
-            "3 2\n" +
-            "3 3\n" +
-            "</pre></div>\n" +
-            "<p><strong>Pyramid Example 1:</strong></p>\n" +
-            "<p><strong>PyramidExample.java</strong></p>\n" +
-            "<div class=\"codeblock\"><textarea name=\"code\" class=\"java\">\n" +
-            "public class PyramidExample {\n" +
-            "public static void main(String[] args) {\n" +
-            "for(int i=1;i<=5;i++){\n" +
-            "for(int j=1;j<=i;j++){\n" +
-            "\t\tSystem.out.print(\"* \");\n" +
-            "}\n" +
-            "System.out.println();//new line\n" +
-            "}\n" +
-            "}\n" +
-            "}\n" +
-            "</textarea></div>\n" +
-            "<p><strong>Output:</strong></p>\n" +
-            "<div class=\"codeblock3\"><pre>* \n" +
-            "* * \n" +
-            "* * * \n" +
-            "* * * * \n" +
-            "* * * * * \n" +
-            "</pre></div>\n" +
-            "<p><strong>Pyramid Example 2:</strong></p>\n" +
-            "<p><strong>PyramidExample2.java</strong></p>\n" +
-            "<div class=\"codeblock\"><textarea name=\"code\" class=\"java\">\n" +
-            "public class PyramidExample2 {\n" +
-            "public static void main(String[] args) {\n" +
-            "int term=6;\n" +
-            "for(int i=1;i<=term;i++){\n" +
-            "for(int j=term;j>=i;j--){\n" +
-            "\t\tSystem.out.print(\"* \");\n" +
-            "}\n" +
-            "System.out.println();//new line\n" +
-            "}\n" +
-            "}\n" +
-            "}\n" +
-            "</textarea></div>\n" +
-            "<p><strong>Output:</strong></p>\n" +
-            "<div class=\"codeblock3\"><pre>* * * * * * \n" +
-            "* * * * * \n" +
-            "* * * * \n" +
-            "* * * \n" +
-            "* * \n" +
-            "*  \n" +
-            "</pre></div>\n" +
+
             "<h2 class=\"h2\">Java for-each Loop</h2>\n" +
             "<p>The for-each loop is used to traverse array or collection in Java. It is easier to use than simple for loop because we don't need to increment value and use subscript notation.</p>\n" +
             "<p>It works on the basis of elements and not the index. It returns element one by one in the defined variable.</p>\n" +
@@ -224,204 +138,19 @@ public class Learn extends AppCompatActivity {
             "for(data_type variable : array_name){  \n" +
             "//code to be executed  \n" +
             "}  \n" +
-            "</textarea></div>\n" +
-            "<p><strong>Example:</strong></p>\n" +
-            "<p><strong>ForEachExample.java</strong></p>\n" +
-            "<div class=\"codeblock\"><textarea name=\"code\" class=\"java\">\n" +
-            "//Java For-each loop example which prints the\n" +
-            "//elements of the array\n" +
-            "public class ForEachExample {\n" +
-            "public static void main(String[] args) {\n" +
-            "    //Declaring an array\n" +
-            "\tint arr[]={12,23,44,56,78};\n" +
-            "\t//Printing array using for-each loop\n" +
-            "\tfor(int i:arr){\n" +
-            "\t\tSystem.out.println(i);\n" +
-            "\t}\n" +
-            "}\n" +
-            "}\n" +
-            "</textarea></div>\n" +
-            "<span class=\"testit\"><a href=\"https://compiler.javatpoint.com/opr/test.jsp?filename=ForEachExample\" target=\"_blank\">Test it Now</a></span>\n" +
-            "<p><strong>Output:</strong></p>\n" +
-            "<div class=\"codeblock3\"><pre>12\n" +
-            "23\n" +
-            "44\n" +
-            "56\n" +
-            "78\n" +
-            "</pre></div>\n" +
+
             "<h2 class=\"h2\">Java Labeled For Loop</h2>\n" +
             "<p>We can have a name of each Java for loop. To do so, we use label before the for loop. It is useful while using the nested for loop as we can break/continue specific for loop.</p>\n" +
             "<h4 class=\"n\">Note: The break and continue keywords breaks or continues the innermost for loop respectively.</h4>\n" +
             "<p><strong>Syntax:</strong></p>\n" +
-            "<div class=\"codeblock\"><textarea name=\"code\" class=\"java\">\n" +
-            "labelname:  \n" +
-            "for(initialization; condition; increment/decrement){  \n" +
-            "//code to be executed  \n" +
-            "}  \n" +
-            "</textarea></div>\n" +
-            "<p><strong>Example:</strong></p>\n" +
-            "<p><strong>LabeledForExample.java</strong></p>\n" +
-            "<div class=\"codeblock\"><textarea name=\"code\" class=\"java\">\n" +
-            "//A Java program to demonstrate the use of labeled for loop\n" +
-            "public class LabeledForExample {\n" +
-            "public static void main(String[] args) {\n" +
-            "    //Using Label for outer and for loop\n" +
-            "\taa:\n" +
-            "\t\tfor(int i=1;i<=3;i++){\n" +
-            "\t\t\tbb:\n" +
-            "\t\t\t\tfor(int j=1;j<=3;j++){\n" +
-            "\t\t\t\t\tif(i==2&amp;&amp;j==2){\n" +
-            "\t\t\t\t\t\tbreak aa;\n" +
-            "\t\t\t\t\t}\n" +
-            "\t\t\t\t\tSystem.out.println(i+\" \"+j);\n" +
-            "\t\t\t\t}\n" +
-            "\t\t}\n" +
-            "}\n" +
-            "}\n" +
-            "</textarea></div>\n" +
-            "<p><strong>Output:</strong></p>\n" +
-            "<div class=\"codeblock3\"><pre>1 1\n" +
-            "1 2\n" +
-            "1 3\n" +
-            "2 1\n" +
-            "</pre></div>\n" +
-            "<p>If you use <strong>break bb;</strong>, it will break inner loop only which is the default behaviour of any loop.</p>\n" +
-            "<p><strong>LabeledForExample2.java</strong></p>\n" +
-            "<div class=\"codeblock\"><textarea name=\"code\" class=\"java\">\n" +
-            "public class LabeledForExample2 {\n" +
-            "public static void main(String[] args) {\n" +
-            "\taa:\n" +
-            "\t\tfor(int i=1;i<=3;i++){\n" +
-            "\t\t\tbb:\n" +
-            "\t\t\t\tfor(int j=1;j<=3;j++){\n" +
-            "\t\t\t\t\tif(i==2&amp;&amp;j==2){\n" +
-            "\t\t\t\t\t\tbreak bb;\n" +
-            "\t\t\t\t\t}\n" +
-            "\t\t\t\t\tSystem.out.println(i+\" \"+j);\n" +
-            "\t\t\t\t}\n" +
-            "\t\t}\n" +
-            "}\n" +
-            "}\n" +
-            "</textarea></div>\n" +
-            "<p><strong>Output:</strong></p>\n" +
-            "<div class=\"codeblock3\"><pre>1 1\n" +
-            "1 2\n" +
-            "1 3\n" +
-            "2 1\n" +
-            "3 1\n" +
-            "3 2\n" +
-            "3 3\n" +
-            "</pre></div>\n" +
+
             "<h2 class=\"h2\">Java Infinitive for Loop</h2>\n" +
             "<p>If you use two semicolons ;; in the for loop, it will be infinitive for loop.</p>\n" +
             "<p><strong>Syntax:</strong></p>\n" +
             "<div class=\"codeblock\"><textarea name=\"code\" class=\"java\">\n" +
             "for(;;){\n" +
             "//code to be executed\n" +
-            "}\n" +
-            "</textarea></div>\n" +
-            "<p><strong>Example:</strong></p>\n" +
-            "<p><strong>ForExample.java</strong></p>\n" +
-            "<div class=\"codeblock\"><textarea name=\"code\" class=\"java\">\n" +
-            "//Java program to demonstrate the use of infinite for loop\n" +
-            "//which prints an statement\n" +
-            "public class ForExample {\n" +
-            "public static void main(String[] args) {\n" +
-            "    //Using no condition in for loop\n" +
-            "\tfor(;;){\n" +
-            "\t\tSystem.out.println(\"infinitive loop\");\n" +
-            "\t}\n" +
-            "}\n" +
-            "}\n" +
-            "</textarea></div>\n" +
-            "<p><strong>Output:</strong></p>\n" +
-            "<div class=\"codeblock3\"><pre>infinitive loop\n" +
-            "infinitive loop\n" +
-            "infinitive loop\n" +
-            "infinitive loop\n" +
-            "infinitive loop\n" +
-            "ctrl+c\n" +
-            "</pre></div>\n" +
-            "<p>Now, you need to press ctrl+c to exit from the program.</p>\n" +
-            "<h2 class=\"h2\">Java for Loop vs while Loop vs do-while Loop</h2>\n" +
-            "<table class=\"alt\">\n" +
-            "<tr>\n" +
-            "<th>Comparison</th>\n" +
-            "<th>for loop</th>\n" +
-            "<th>while loop</th>\n" +
-            "<th>do-while loop</th>\n" +
-            "</tr>\n" +
-            "<tr>\n" +
-            "<td>Introduction</td>\n" +
-            "<td>The Java for loop is a control flow statement that iterates a part of the <a href=\"java-programs\">programs</a> multiple times. </td>\n" +
-            "<td>The Java while loop is a control flow statement that executes a part of the programs repeatedly on the basis of given boolean condition.</td>\n" +
-            "<td>The Java do while loop is a control flow statement that executes a part of the programs at least once and the further execution depends upon the given boolean condition.</td>\n" +
-            "</tr>\n" +
-            "<tr>\n" +
-            "<td>When to use</td>\n" +
-            "<td>If the number of iteration is fixed, it is recommended to use for loop.</td>\n" +
-            "<td>If the number of iteration is not fixed, it is recommended to use while loop.</td>\n" +
-            "<td>If the number of iteration is not fixed and you must have to execute the loop at least once, it is recommended to use the do-while loop.</td>\n" +
-            "</tr>\n" +
-            "<tr>\n" +
-            "<td>Syntax</td>\n" +
-            "<td>for(init;condition;incr/decr){ <br>\n" +
-            "// code to be executed <br>\n" +
-            "}\n" +
-            "</td>\n" +
-            "<td>\n" +
-            "while(condition){ <br>\n" +
-            "//code to be executed <br>\n" +
-            "}\n" +
-            "</td>\n" +
-            "<td>\n" +
-            "do{ <br>\n" +
-            "//code to be executed <br>\n" +
-            "}while(condition);\n" +
-            "</td>\n" +
-            "</tr>\n" +
-            "<tr>\n" +
-            "<td>Example</td>\n" +
-            "<td>\n" +
-            "//for loop <br>\n" +
-            "for(int i=1;i&lt;=10;i++){ <br>\n" +
-            "System.out.println(i); <br>\n" +
-            "}\n" +
-            "</td>\n" +
-            "<td>\n" +
-            "//while loop <br>\n" +
-            "int i=1; <br>\n" +
-            "while(i&lt;=10){ <br>\n" +
-            "System.out.println(i);<br>\n" +
-            "i++; <br>\n" +
-            "} </td>\n" +
-            "<td>\n" +
-            "//do-while loop <br>\n" +
-            "int i=1; <br>\n" +
-            "do{ <br>\n" +
-            "System.out.println(i);<br>\n" +
-            "i++; <br>\n" +
-            "}while(i&lt;=10);\n" +
-            "</td>\n" +
-            "</tr>\n" +
-            "<tr>\n" +
-            "<td>Syntax for infinitive loop</td>\n" +
-            "<td>\n" +
-            "for(;;){ <br>\n" +
-            "//code to be executed <br>\n" +
-            "}</td>\n" +
-            "<td>\n" +
-            "while(true){ <br>\n" +
-            "//code to be executed <br>\n" +
-            "}</td>\n" +
-            "<td>\n" +
-            "do{ <br>\n" +
-            "//code to be executed <br>\n" +
-            "}while(true);\n" +
-            "</td>\n" +
-            "</tr>\n" +
-            "</table>\n" +
-            "<hr />", "", ""};
+            "}", "", ""};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
