@@ -21,24 +21,24 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener{
 
     static class Data{
         public static String questions[] ={
-                "Java supports Mu?",
-                "Which one is not the programming language?",
-                "Where you are watching this video?",
-                "Which company owns the Apple?"
+                "What is the extension of java code files?",
+                "Which one of the following is not an access modifier?",
+                "What is the full form of JVM ?",
+                "Love this Application?"
         };
 
         public static String choices[][] = {
-                {"Google","Apple","Nokia","Samsung"},
-                {"Java","Kotlin","Notepad","Python"},
-                {"Facebook","Whatsapp","Instagram","Youtube"},
-                {"Google","Apple","Nokia","Samsung"}
+                {".js",".class",".java",".txt"},
+                {"Protected","Private","Void","Public"},
+                {"Java Very Large Machine","Java Verified Machine", "" + "Java Very Small Machine", "Java Virtual Machine"},
+                {"Yes","No","Absolutely No","100 times Yes"}
         };
 
         public static String correctAnswers[] = {
-                "Google",
-                "Notepad",
-                "Youtube",
-                "Apple"
+                ".java",
+                "Void",
+                "Java Virtual Machine",
+                "100 times Yes"
         };
     }
 
@@ -50,7 +50,7 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_quiz);
 
         totalQuestionsTextView = findViewById(R.id.total_question);
         questionTextView = findViewById(R.id.question);
@@ -94,7 +94,7 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener{
         }else{
             //choices button clicked
             selectedAnswer  = clickedButton.getText().toString();
-            clickedButton.setBackgroundColor(Color.MAGENTA);
+            clickedButton.setBackgroundColor(Color.LTGRAY);
         }
 
     }

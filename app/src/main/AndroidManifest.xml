@@ -21,6 +21,15 @@
         <activity
             android:name=".Contribute"
             android:exported="true" />
+        <activity
+            android:name=".Quiz"
+            android:exported="true" />
+        <activity
+            android:name=".Learn"
+            android:exported="true" />
+        <activity
+            android:name=".LearnEach"
+            android:exported="true" />
     </application>
 
 </manifest>

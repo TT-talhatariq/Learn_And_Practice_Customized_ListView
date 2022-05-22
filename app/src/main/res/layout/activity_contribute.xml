@@ -37,9 +37,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
+    <EditText
         android:id="@+id/question"
-        android:editable="true"
+        android:padding="5dp"
         android:layout_width="190dp"
         android:layout_height="52dp"
         android:layout_marginTop="64dp"
@@ -51,21 +51,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/question2" />
 
-    <TextView
+          <EditText  android:padding="5dp"
         android:id="@+id/question3"
-        android:editable="true"
         android:layout_width="190dp"
         android:layout_height="52dp"
         android:layout_marginTop="20dp"
         android:background="#FFFFFF"
         android:backgroundTint="#80FBFBFB"
+        android:editable="true"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.606"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/question5" />
 
-    <TextView
+          <EditText  android:padding="5dp"
         android:editable="true"
         android:id="@+id/question5"
         android:layout_width="190dp"
@@ -79,7 +79,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/question" />
 
-    <TextView
+          <EditText  android:padding="5dp"
         android:editable="true"
         android:id="@+id/question6"
         android:layout_width="190dp"
@@ -93,7 +93,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/question3" />
 
-    <TextView
+
+          <EditText  android:padding="5dp"
         android:id="@+id/question2"
         android:layout_width="330dp"
         android:layout_height="50dp"

@@ -28,7 +28,7 @@ import android.widget.Button;
         });
 
         //Quiz Taken
-         contribute.setOnClickListener(new View.OnClickListener() {
+         practice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, Quiz.class);
