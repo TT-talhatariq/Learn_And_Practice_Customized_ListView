@@ -16,6 +16,7 @@ public class Contribute extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contribute);
+        contribute = findViewById(R.id.contribute);
 
         //On contribute Click Listener
         contribute.setOnClickListener(new View.OnClickListener() {

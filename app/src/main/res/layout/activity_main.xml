@@ -12,7 +12,7 @@
         android:id="@+id/practice"
         android:layout_width="321dp"
         android:layout_height="78dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="40dp"
         android:text="@string/practice"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,14 +23,12 @@
         android:id="@+id/contribute"
         android:layout_width="321dp"
         android:layout_height="78dp"
-        android:layout_marginBottom="124dp"
+        android:layout_marginTop="28dp"
         android:text="@string/contribute"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/practice"
-        app:layout_constraintVertical_bias="0.901" />
+        app:layout_constraintTop_toBottomOf="@+id/practice" />
 
     <TextView
         android:id="@+id/textView"

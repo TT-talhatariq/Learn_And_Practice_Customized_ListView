@@ -39,68 +39,72 @@
 
     <TextView
         android:id="@+id/question"
+        android:editable="true"
         android:layout_width="190dp"
         android:layout_height="52dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="64dp"
         android:background="#FFFFFF"
         android:backgroundTint="#80FBFBFB"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.606"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/question2" />
 
     <TextView
         android:id="@+id/question3"
+        android:editable="true"
         android:layout_width="190dp"
         android:layout_height="52dp"
-        android:layout_marginTop="316dp"
+        android:layout_marginTop="20dp"
         android:background="#FFFFFF"
         android:backgroundTint="#80FBFBFB"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.606"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/question5" />
 
     <TextView
+        android:editable="true"
         android:id="@+id/question5"
         android:layout_width="190dp"
         android:layout_height="52dp"
-        android:layout_marginTop="232dp"
-        android:background="#FFFFFF"
-        android:backgroundTint="#80FBFBFB"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.606"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <TextView
-        android:id="@+id/question6"
-        android:layout_width="190dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="396dp"
-        android:background="#FFFFFF"
-        android:backgroundTint="#80FBFBFB"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.606"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <TextView
-        android:id="@+id/question2"
-        android:layout_width="330dp"
-        android:layout_height="50dp"
         android:layout_marginTop="36dp"
         android:background="#FFFFFF"
         android:backgroundTint="#80FBFBFB"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.716"
+        app:layout_constraintHorizontal_bias="0.606"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/question" />
+
+    <TextView
+        android:editable="true"
+        android:id="@+id/question6"
+        android:layout_width="190dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#80FBFBFB"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.606"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question3" />
+
+    <TextView
+        android:id="@+id/question2"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="140dp"
+        android:editable="true"
+        android:layout_marginEnd="16dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#80FBFBFB"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
@@ -122,11 +126,9 @@
         android:text="@string/option_a"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/question"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.43" />
+        app:layout_constraintVertical_bias="0.426" />
 
     <TextView
         android:id="@+id/textView6"
@@ -136,8 +138,6 @@
         android:text="@string/option_c"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/question"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.638" />
@@ -150,8 +150,6 @@
         android:text="@string/Answer"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/question"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.754" />
@@ -164,8 +162,6 @@
         android:text="@string/option_b"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/question"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.534" />
