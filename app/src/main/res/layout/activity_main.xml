@@ -23,14 +23,14 @@
         android:id="@+id/contribute"
         android:layout_width="321dp"
         android:layout_height="78dp"
-        android:layout_marginTop="56dp"
         android:layout_marginBottom="124dp"
         android:text="@string/contribute"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
- />
+        app:layout_constraintTop_toBottomOf="@+id/practice"
+        app:layout_constraintVertical_bias="0.901" />
 
     <TextView
         android:id="@+id/textView"

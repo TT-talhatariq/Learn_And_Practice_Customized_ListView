@@ -1,28 +1,28 @@
-    package com.talhatariq.learnandpractice;
+package com.talhatariq.learnandpractice;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
-    public class MainActivity extends AppCompatActivity {
+public class Contribute extends AppCompatActivity {
 
-    Button learn, practice, contribute;
+    Button contribute;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        learn = (Button) findViewById(R.id.question);
-        practice = (Button) findViewById(R.id.practice);
-        contribute = (Button) findViewById(R.id.contribute);
+        setContentView(R.layout.activity_contribute);
 
         //On contribute Click Listener
         contribute.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Contribute.class);
+                Toast.makeText(getApplicationContext(),"Your Q will be reviewed shortly!",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(Contribute.this, MainActivity.class);
                 startActivity(intent);
             }
         });
