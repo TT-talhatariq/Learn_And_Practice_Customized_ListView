@@ -13,5 +13,12 @@
     <string name="Answer">Answer:</string>
     <string name="introduction">Introduction</string>
     <string name="basics">Basics</string>
+    <string name="oop">OOP</string>
+    <string name="arrays">Arrays</string>
+    <string name="loops">Loops</string>
+    <string name="title">Title</string>
+    <string name="text">text</string>
+    <string name="back_to_home">Back to Home</string>
+    <string name="back_to_Main">Back to Main</string>
 
 </resources>

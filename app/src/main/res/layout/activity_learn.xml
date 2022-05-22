@@ -48,13 +48,31 @@
             android:text="@string/basics"
             android:textSize="24sp" />
         <Button
-            android:id="@+id/basics"
+            android:id="@+id/loops"
             android:layout_width="321dp"
             android:layout_height="78dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:gravity="center"
-            android:text="@string/basics"
+            android:text="@string/loops"
+            android:textSize="24sp" />
+        <Button
+            android:id="@+id/arrays"
+            android:layout_width="321dp"
+            android:layout_height="78dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/arrays"
+            android:textSize="24sp" />
+        <Button
+            android:id="@+id/oop"
+            android:layout_width="321dp"
+            android:layout_height="78dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/oop"
             android:textSize="24sp" />
     </LinearLayout>
 

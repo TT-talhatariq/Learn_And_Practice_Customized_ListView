@@ -35,5 +35,15 @@ import android.widget.Button;
                 startActivity(intent);
             }
         });
+
+         //Learn
+        //Quiz Taken
+        learn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Learn .class);
+                startActivity(intent);
+            }
+        });
     }
 }
