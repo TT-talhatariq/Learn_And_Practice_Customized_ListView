@@ -1,4 +1,4 @@
-package com.talhatariq.learnandpractice;
+package com.example.customizedadapter;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -19,16 +19,16 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class Quiz extends AppCompatActivity {
-    Button button;
-    ListView listView;
-    RadioGroup radioGroup;
-    ArrayList<Question> questionList=new ArrayList<>();
-    MyAdapter adapter;
+public class MainActivity extends AppCompatActivity {
+Button button;
+ListView listView;
+RadioGroup radioGroup;
+ArrayList<Question> questionList=new ArrayList<>();
+MyAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quiz);
+        setContentView(R.layout.activity_main);
         button=findViewById(R.id.button);
 
         questionList.add(new Question("Q1. In which HTML tag do we put the JS code?","script tag",new String[]{"link tag","js tag"}));
@@ -50,7 +50,7 @@ public class Quiz extends AppCompatActivity {
             }
         }
         System.out.println("Score is: "+score);
-        Intent intent =new Intent(Quiz.this,MainActivity2.class);
+        Intent intent =new Intent(MainActivity.this,MainActivity2.class);
         intent.putExtra("Score",score);
         startActivity(intent);
         finish();
