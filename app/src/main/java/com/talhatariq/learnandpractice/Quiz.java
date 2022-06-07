@@ -32,34 +32,43 @@ public class Quiz extends AppCompatActivity {
         setContentView(R.layout.activity_quiz);
         button=findViewById(R.id.button);
 
-        questionList.add(new Question("Q1. In which HTML tag do we put the JS code?","script tag",new String[]{"link tag","js tag"}));
-        questionList.add(new Question("Q2. Which object is in the top of the root of JavaScript?","window",new String[]{"document","URL"}));
-        questionList.add(new Question("Q3. DOM is ??","describes the structure of HTML or XML document",new String[]{"dedicated for Js","a template engine"}));
-        questionList.add(new Question("Q4. Which event do you use to perform something after the page has finished loading?","onload",new String[]{"onfinished","oncomplete"}));
-        questionList.add(new Question("Q5. Which of the following is not a property of window object?","menu",new String[]{"history","navigator"}));
-        questionList.add(new Question("Q6. Which of the following is not a valid mouse event?","onmousescroller",new String[]{"onmouseover","onmousemove"}));
+        //List of Questions
+        questionList.add(new Question("1. JVM Stands for?","Java Virtual Machine",new String[]{"Java Volcanic Machine","Java Verified Machine"}));
+        questionList.add(new Question("2. What is the extension of java code files?",".java",new String[]{".txt",".js"}));
+        questionList.add(new Question("3. Which one of the following is not an access modifier?","void",new String[]{"Protected","Private"}));
+        questionList.add(new Question("4. Java is a?","language",new String[]{"framework","library"}));
+        questionList.add(new Question("5. Loves this App?","Yes",new String[]{"No","Maybe"}));
+
         listView = (ListView) findViewById(R.id.listView);
+
         adapter=new MyAdapter(this, questionList);
         listView.setAdapter(adapter);
     }
+
+    //For submitting quez
     public void submitQuiz(View view) {
         int score=0;
         ArrayList<String> selectedAnswers=adapter.selectedAnswers;
+
+        //checking all answers
         for(int i=0;i<questionList.size();i++){
             if(questionList.get(i).getCorrectOption().equals(selectedAnswers.get(i))){
                 score++;
             }
         }
-        System.out.println("Score is: "+score);
+        //showing results
         new AlertDialog.Builder(this)
                 .setTitle("Result")
                 .setMessage("Score is "+ score+" out of "+ questionList.size())
                 .setPositiveButton("Go to Main",(dialogInterface, i) -> restart() )
                 .setCancelable(false)
                 .show();
-        //finish();
+
     }
+
+    //after finishing quiz
     void restart(){
+        finish();
         Intent intent = new Intent(Quiz.this, MainActivity.class);
         startActivity(intent);
     }

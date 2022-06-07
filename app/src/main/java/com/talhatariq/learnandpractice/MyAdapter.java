@@ -27,6 +27,7 @@ public class MyAdapter extends ArrayAdapter<Question> {
         super(context, 0, questionArrayList);
         selectedAnswers=new ArrayList<>();
 
+        //Selected Answers are null at first
         for(int i=0;i<questionArrayList.size();i++){
             selectedAnswers.add(null);
         }
@@ -36,6 +37,7 @@ public class MyAdapter extends ArrayAdapter<Question> {
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+        //Filling Convet view
         convertView=LayoutInflater.from(getContext()).inflate(R.layout.questionview,parent,false);
 
         Question q =getItem(position);
@@ -47,8 +49,11 @@ public class MyAdapter extends ArrayAdapter<Question> {
         radioButtons[1]=convertView.findViewById(R.id.b);
         radioButtons[2]=convertView.findViewById(R.id.c);
         question.setText(q.getQuestion());
+
         int randomNmbr = (int) (Math.floor(Math.random() * 3));
+
         radioButtons[randomNmbr].setText(q.getCorrectOption());
+
         int optionIterator = 0;
         for (int i = 0; i < 3; i++) {
             if (i != randomNmbr) {
