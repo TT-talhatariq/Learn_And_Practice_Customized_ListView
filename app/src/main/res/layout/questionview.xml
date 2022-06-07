@@ -25,6 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+
         android:layout_marginTop="20dp"
         android:visibility="visible"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,7 +37,8 @@
             android:layout_height="wrap_content"
             android:clickable="true"
             android:focusable="false"
-            android:text="RadioButton" />
+            android:text="RadioButton"
+            android:textColor="#2262F8" />
 
         <RadioButton
             android:id="@+id/b"
@@ -44,7 +46,8 @@
             android:layout_height="wrap_content"
             android:clickable="true"
             android:focusable="false"
-            android:text="RadioButton" />
+            android:text="RadioButton"
+            android:textColor="#2262F8" />
 
         <RadioButton
             android:id="@+id/c"
@@ -52,6 +55,7 @@
             android:layout_height="wrap_content"
             android:clickable="true"
             android:focusable="false"
-            android:text="RadioButton" />
+            android:text="RadioButton"
+            android:textColor="#2262F8" />
     </RadioGroup>
 </androidx.constraintlayout.widget.ConstraintLayout>

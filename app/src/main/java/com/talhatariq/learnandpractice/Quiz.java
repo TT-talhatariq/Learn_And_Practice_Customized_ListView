@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.Constraints;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -50,10 +51,17 @@ public class Quiz extends AppCompatActivity {
             }
         }
         System.out.println("Score is: "+score);
-        Intent intent =new Intent(Quiz.this,MainActivity2.class);
-        intent.putExtra("Score",score);
+        new AlertDialog.Builder(this)
+                .setTitle("Result")
+                .setMessage("Score is "+ score+" out of "+ questionList.size())
+                .setPositiveButton("Go to Main",(dialogInterface, i) -> restart() )
+                .setCancelable(false)
+                .show();
+        //finish();
+    }
+    void restart(){
+        Intent intent = new Intent(Quiz.this, MainActivity.class);
         startActivity(intent);
-        finish();
     }
 
 }

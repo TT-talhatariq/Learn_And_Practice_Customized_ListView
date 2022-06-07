@@ -22,9 +22,11 @@ import java.util.List;
 
 public class MyAdapter extends ArrayAdapter<Question> {
     ArrayList<String> selectedAnswers;
+
     public MyAdapter(@NonNull Context context,  ArrayList<Question> questionArrayList) {
         super(context, 0, questionArrayList);
         selectedAnswers=new ArrayList<>();
+
         for(int i=0;i<questionArrayList.size();i++){
             selectedAnswers.add(null);
         }
