@@ -20,5 +20,6 @@
     <string name="text">text</string>
     <string name="back_to_home">Back to Home</string>
     <string name="back_to_Main">Back to Main</string>
+    <string name="option_c_C">Option C</string>
 
 </resources>

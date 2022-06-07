@@ -24,7 +24,7 @@
         android:id="@+id/textView"
         android:layout_width="365dp"
         android:layout_height="81dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#951212"
         android:fontFamily="sans-serif-condensed-light"
         android:gravity="center"
@@ -39,134 +39,81 @@
 
     <EditText
         android:id="@+id/question"
-        android:padding="5dp"
-        android:layout_width="190dp"
+        android:hint="Option A"
+        android:layout_width="241dp"
         android:layout_height="52dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="48dp"
         android:background="#FFFFFF"
         android:backgroundTint="#80FBFBFB"
+        android:padding="5dp"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.606"
+        app:layout_constraintHorizontal_bias="0.558"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/question2" />
 
-          <EditText  android:padding="5dp"
-        android:id="@+id/question3"
-        android:layout_width="190dp"
+
+    <EditText
+        android:id="@+id/question7"
+        android:layout_width="241dp"
         android:layout_height="52dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="44dp"
         android:background="#FFFFFF"
         android:backgroundTint="#80FBFBFB"
-        android:editable="true"
+        android:hint="Answer"
+        android:padding="5dp"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.606"
+        app:layout_constraintHorizontal_bias="0.558"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/question5" />
 
-          <EditText  android:padding="5dp"
-        android:editable="true"
+    <EditText
+        android:id="@+id/question3"
+        android:layout_width="241dp"
+        android:layout_height="52dp"
+        android:hint="Option B"
+        android:layout_marginTop="136dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#80FBFBFB"
+        android:padding="5dp"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.558"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question2" />
+
+    <EditText
         android:id="@+id/question5"
-        android:layout_width="190dp"
+        android:layout_width="241dp"
         android:layout_height="52dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="224dp"
         android:background="#FFFFFF"
         android:backgroundTint="#80FBFBFB"
+        android:hint="@string/option_c_C"
+        android:padding="5dp"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.606"
+        app:layout_constraintHorizontal_bias="0.558"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/question" />
+        app:layout_constraintTop_toBottomOf="@+id/question2" />
 
-          <EditText  android:padding="5dp"
-        android:editable="true"
-        android:id="@+id/question6"
-        android:layout_width="190dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="24dp"
-        android:background="#FFFFFF"
-        android:backgroundTint="#80FBFBFB"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.606"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/question3" />
-
-
-          <EditText  android:padding="5dp"
+    <EditText
         android:id="@+id/question2"
         android:layout_width="330dp"
         android:layout_height="50dp"
-        android:layout_marginTop="140dp"
-        android:editable="true"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="40dp"
         android:background="#FFFFFF"
         android:backgroundTint="#80FBFBFB"
+        android:editable="true"
+        android:labelFor="@+id/question4"
+        android:padding="5dp"
+        android:hint="Question"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="34dp"
-        android:layout_height="34dp"
-        android:layout_marginStart="16dp"
-        android:text="@string/q"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.242" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="135dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="16dp"
-        android:text="@string/option_a"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.426" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="135dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="16dp"
-        android:text="@string/option_c"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.638" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="135dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="16dp"
-        android:text="@string/Answer"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.754" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="135dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="16dp"
-        android:text="@string/option_b"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.534" />
-
+        app:layout_constraintTop_toTopOf="parent" /><![CDATA[
 
     >
+]]>
 </androidx.constraintlayout.widget.ConstraintLayout>
